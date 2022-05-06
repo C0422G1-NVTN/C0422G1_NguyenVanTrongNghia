@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sở thích</title>
+    <style>
+        table{
+            width: 100%;
+        }
+        th{
+            background-color: orange;
+        }
+        .abc{
+            color : blue;
+        }
+        .trung{
+            color : orange;
+        }
+    </style>
+</head>
+<body>
+<form>
+    <form>
+        <table>
+            <tr>
+                <th colspan="4">SỞ THÍCH CỦA BẠN</th>
+            </tr>
+            <tr>
+                <td class="abc" style="text-align: right" >Họ và tên</td>
+                <td colspan="3">
+                    <input type="text" name="name">
+                </td>
+            </tr>
+            <tr>
+                <td class="abc" align="right">Email</td>
+                <td colspan="3">
+                    <input type="text" name="email">
+                </td>
+            </tr>
+            <tr>
+                <td class="abc" align="right">Sở thích</td>
+                <td class="trung">
+                    <input  type="checkbox" name="joy"> Thể thao
+                </td>
+                <td class="trung">
+                    <input type="checkbox" name="joy"> Âm nhạc
+                </td>
+                <td class="trung">
+                    <input type="checkbox" name="joy"> Đọc sách
+                </td>
+            </tr>
+            <tr class="trung">
+                <td rowspan="3"></td>
+                <td>
+                    <input type="checkbox" name="joy"> Lướt web
+                </td>
+                <td>
+                    <input type="checkbox" name="joy"> Chơi game
+                </td>
+                <td>
+                    <input type="checkbox" name="joy"> Điện ảnh
+                </td>
+            </tr>
+            <tr class="trung">
+                <td><input type="checkbox" name="joy"> Du lịch</td>
+            </tr>
+            <tr>
+                <td><input type="submit" name="submit" value="Gửi thông tin"></td>
+                <td><input type="reset" name="reset" value="Nhập lại"></td>
+            </tr>
+        </table>
+    </form>
+
+</body>
+</html>
