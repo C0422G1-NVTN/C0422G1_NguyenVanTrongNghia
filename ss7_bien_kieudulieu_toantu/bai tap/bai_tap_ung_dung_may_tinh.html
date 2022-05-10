@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form>
+    <table>
+        <h1>Caculator</h1>
+        <tr>
+            <td><input type="number" placeholder="Nhập số thứ nhất" id="sothunhat"></td>
+            <td><input type="number" placeholder="Nhập số thứ hai" id="sothuhai"></td>
+        </tr>
+    </table>
+    <table>
+        <tr>
+            <td><button type="button" onclick="tổng()">+</button></td>
+            <td><button type="button" onclick="hiệu()">-</button></td>
+            <td><button type="button" onclick="thương()">*</button></td>
+            <td><button type="button" onclick="tích()">/</button></td>
+        </tr>
+    </table>
+    <p id="ketqua"></p>
+</form>
+<script>
+
+    function tổng() {
+        let a= parseInt(document.getElementById('sothunhat').value)
+        let b= parseInt(document.getElementById('sothuhai').value)
+        let ketqua= a + b
+        document.getElementById("ketqua").innerHTML = "kết quả là: " + ketqua
+    }
+    function hiệu() {
+        let a= parseInt(document.getElementById('sothunhat').value)
+        let b= parseInt(document.getElementById('sothuhai').value)
+        let ketqua= a - b
+        document.getElementById("ketqua").innerHTML = "kết quả là: " + ketqua
+    }
+    function thương() {
+        let a= parseInt(document.getElementById('sothunhat').value)
+        let b= parseInt(document.getElementById('sothuhai').value)
+        let ketqua= a * b
+        document.getElementById("ketqua").innerHTML = "kết quả là: " + ketqua
+    }function tích() {
+        let a= parseInt(document.getElementById('sothunhat').value)
+        let b= parseInt(document.getElementById('sothuhai').value)
+        let ketqua= a / b
+        document.getElementById("ketqua").innerHTML = "kết quả là: " + ketqua
+    }
+
+
+</script>
+
+</body>
+</html>
+</body>
+</html>

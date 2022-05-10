@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<table>
+    <tr>
+    <th><p>Amount</p></th>
+    <th><p>From Currency</p></th>
+    <th><p>To Currency</p></th>
+    </tr>
+    <tr>
+        <td><input id="tiennhap" type="number"></td>
+        <td>
+            <select id="from">
+                <option>VND</option>
+                <option>USD</option>
+            </select>
+        </td>
+        <td>
+            <select id="to">
+            <option>USD</option>
+            <option>VND</option>
+        </select>
+        </td>
+        <td>
+            <button type="button"id="Convert" onclick="chuyentien()">Convert</button>
+        </td>
+    </tr>
+</table>
+<p id="ketqua"></p>
+<script>
+    function  chuyentien()
+    {
+        let a = document.getElementById("tiennhap").value
+        b = document.getElementById("from").value
+        c = document.getElementById("to").value
+        if (b == 'VND' && c == 'USD') {
+            let ketqua = a / 23000
+            document.getElementById('ketqua').innerText= ketqua + '$'
+
+        } else if (c == 'VND' && b == 'USD') {
+            let ketqua = a * 23000
+            document.getElementById('ketqua').innerText= ketqua + 'VND'
+        }
+
+    }
+</script>
+</body>
+</html>
