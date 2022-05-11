@@ -7,13 +7,29 @@
 <body>
 <table>
     <tr>
-        <td><input type="number"></td>
+        <td><input id="songuyen" type="number"></td>
         <td><input type="submit" onclick="kiemtra()" value="check" ></td>
     </tr>
 </table>
 <p id="Nghia"></p>
 <script>
-    Function(kiemtra)
+    function kiemtra() {
+        let number = document.getElementById('songuyen').value
+        switch (number) {
+        case '1' :
+        case '3' :
+        case '7' :
+        case '8' :
+        case '10' :
+        case '12' : document.getElementById('Nghia').innerHTML =(' Tháng '+ number +' có 31 ngày');break;
+        case '2' : document.getElementById('Nghia').innerHTML =(' Tháng '+ number +' có 28 hoặc 29 ngày'); break;
+        case '4' :
+        case '6' :
+        case '9' :
+        case '11' :document.getElementById('Nghia').innerHTML =(' Tháng '+ number +' có 30 ngày'); break;
+        default :document.getElementById('Nghia').innerHTML =('Nhập lại tháng');
+        }
+        }
 </script>
 </body>
 </html>
