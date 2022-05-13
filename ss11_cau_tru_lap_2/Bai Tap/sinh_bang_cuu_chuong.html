@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let x
+    let y
+    document.write("<table border='1'>")
+    for (x=1;x<=10;x++){
+        document.write("<tr>")
+        for (y=2;y<=10;y++){
+            document.write("<td>")
+            document.write(y + "*" + x + "=" + x*y)
+            document.write("</td>")
+        }document.write('<br>')
+        document.write("</tr>")
+    }
+    document.write("</table>")
+</script>
+</body>
+</html>
