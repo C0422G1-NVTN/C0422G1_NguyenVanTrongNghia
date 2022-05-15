@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--bai tap 7-->
+<!--<script>-->
+<!--    for (let number = 1; number<=100;number++){-->
+<!--        if (number % 3 == 0 && number % 5 == 0) {-->
+<!--            document.write("FizzBuzz")-->
+<!--        }-->
+<!--        else if (number % 3 == 0) {-->
+<!--            document.write("Fizz")-->
+<!--        }-->
+<!--        else if (number % 5 == 0) {-->
+<!--            document.write("Buzz")-->
+<!--        }-->
+<!--        else {-->
+<!--            document.write(number)-->
+<!--        }-->
+<!--    }-->
+<!--</script>-->
+<button onclick="playRandomNumber()">Chơi</button>
+<script>
+function playRandomNumber() {
+    let rangerNumber = prompt("Nhap vao số giới hạn từ 1 đến")
+    let numberRandom = Math.floor(Math.random() * (rangerNumber) + 1);
+    let numberOfPlayer = prompt("Nhap số bạn muốn đoán")
+    for (let i = 0; i < 3; i++) {
+        if (numberRandom == numberOfPlayer) {
+            alert("Chuc mung & Ket thuc")
+            break;
+        }
+        if (numberRandom > numberOfPlayer) {
+            numberOfPlayer = prompt("So ban nhap nho hon,vui lòng đoán lại")
+        }
+        if (numberRandom < numberOfPlayer) {
+            numberOfPlayer = prompt("So ban nhap lon hon,vui lòng nhập lại")
+        }
+    }
+}
+</script>
+</body>
+</html>
