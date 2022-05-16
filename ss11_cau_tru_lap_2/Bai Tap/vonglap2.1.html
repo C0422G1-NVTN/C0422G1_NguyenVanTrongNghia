@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let number = prompt("Nhap so luong Fibonaci")
+    let n1 = 0
+    let n2 = 1
+    let numberfibonaci = 1
+    for (i = 0;i<number;i++){
+        numberfibonaci = numberfibonaci + n1
+        document.write(numberfibonaci + "<br>")
+        n1 = n2
+        n2 = numberfibonaci
+    }
+</script>
+</body>
+</html>
