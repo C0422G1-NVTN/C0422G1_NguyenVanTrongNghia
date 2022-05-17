@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let myArray = [1,4,5,10,14,15,16,55,59,62]
+    let max = myArray[0];
+    let sum = 0;
+    let average ;
+    for (i = 0;i< myArray.length;i++) {
+        if (myArray[i] > max) {
+            max = myArray[i];
+        }
+        sum += myArray[i]
+        average = sum/myArray.length
+    }document.write("So lon nhat la" + max +"<br>"+ "Trung binh cong la" + average )
+</script>
+</body>
+</html>

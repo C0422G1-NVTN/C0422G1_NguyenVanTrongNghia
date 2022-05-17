@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let myIndex = 1;
+    let myArray = [1,4,5,10,14,15,16,55,59,62]
+    let max = myArray[0];
+for (i = 0;i< myArray.length;i++)
+{
+    if (myArray[i] > max)
+    {
+        max = myArray[i];
+        myIndex = i + 1;
+    }
+    document.write('Max la' + max + 'Vị trí là' + myIndex + "<br>")
+}
+</script>
+</body>
+</html>
