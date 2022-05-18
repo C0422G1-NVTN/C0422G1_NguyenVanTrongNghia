@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let number = Array(10)
+    for (i=0;i<number.length;i++){
+         number[i] = parseInt(prompt("Nhap so" + i + ":"))
+    }
+    document.write(number + "<br>")
+    let V = parseInt(prompt("Nhap V :"))
+    for (i=0;i<number.length;i++){
+        if (V == number[i]){
+            for (let j = i;j<number.length;j++){
+                number[j]=number[j+1]
+            }
+        }
+    }
+    document.write(number)
+    number
+</script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let str = prompt("nhap cau 1")
+    let str2 = prompt("nhap cau 2")
+    let count=0
+    if (str.length==str2.length){
+        for (let i = 0; i < str.length; i++) {
+            if (str[i]!=str2[i]){
+                count=1
+                break
+            }
+        }if (count==0){
+            document.write("giống")
+        }else
+            document.write("khác")
+    }else
+        document.write("khác")
+</script>
+</body>
+</html>

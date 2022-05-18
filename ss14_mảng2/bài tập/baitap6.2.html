@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let arr = [ 'c', 's', 'c', '2', '6', '1' ]
+    let first = 0;
+    let last = arr.length -1;
+    while (first < last) {
+        let c= arr[first];
+        arr[first] = arr[last];
+        arr[last] = c;
+        first++;
+        last--;
+    }document.write(arr)
+</script>
+</body>
+</html>

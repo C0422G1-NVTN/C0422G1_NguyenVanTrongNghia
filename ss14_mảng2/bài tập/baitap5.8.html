@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let number = Array(10)
+    for (i = 0;i<number.length;i++){
+        number[i] = parseInt(prompt("Input Number" + i + ":"))
+    }
+   for (let i = 0;i<number.length;i++){
+       for (let j = 0; j <number.length; j++){
+           if (number[i]>number[j]){
+               let n = number[i]
+               number[i]=number[j]
+               number[j]=n
+           }
+       }
+   }document.write(number)
+</script>
+</body>
+</html>

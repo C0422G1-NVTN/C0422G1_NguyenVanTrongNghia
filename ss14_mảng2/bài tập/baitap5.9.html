@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let arr= Array(3)
+    for (let i = 0; i < arr.length ; i++) {
+        arr[i] = parseInt(prompt("Nhập phần tử " + i))
+    }
+
+    let arr2= Array(3)
+    for (let i = 0; i < arr.length ; i++) {
+        arr2[i] = parseInt(prompt("Nhập phần tử " + i))
+    }
+
+    let arr3=[]
+    for (let i = 0; i < arr.length; i++) {
+        arr3.push(arr[i])
+    }
+    for (let i = 0 ; i < arr2.length; i++) {
+        arr3.push(arr2[i])
+    }
+    document.write(arr3);
+
+
+
+</script>
+</body>
+</html>
