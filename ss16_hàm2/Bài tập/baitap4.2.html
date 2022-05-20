@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--Viết hàm tính diện tích, hàm tính chu vi hình tròn. Gọi hàm vừa xây dựng được-->
+<script>
+    let r = parseInt(prompt("Nhập bán kính hình tròn"))
+    function sHinhTron(r) {
+      let dientich = 3.14 * (r * r)
+        document.write("diện tích hình tròn = " + dientich + '<br>')
+    }
+    function cvHinhTron(r) {
+      let chuvi = 3.14*2*r
+        document.write("chu vi hình tròn = " + chuvi)
+    }
+    sHinhTron(r)
+    cvHinhTron(r)
+</script>
+</body>
+</html>

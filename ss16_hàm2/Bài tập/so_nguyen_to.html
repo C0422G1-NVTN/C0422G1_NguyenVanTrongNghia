@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let number = parseInt(prompt("nhập số bạn cần kiểm tra"))
+    function isPrime(n) {
+      let flag = true; // n là số nguyên tố
+      if (n<2){
+          flag = false; //  n ko phải số nguyên tố
+      }else {
+          for (let i = 2; i < n ; i++) {
+              if (n%i==0){
+                  flag = false // n không phải số nguyên tố
+              break;
+              }
+          }
+      }
+      if (flag == true) {            // in số nguyên tố
+      document.write(n + " là số nguyên tố")
+      }else{
+          document.write(n + "không là số nguyên tố")
+      }
+    }
+    isPrime(number)
+</script>
+</body>
+</html>

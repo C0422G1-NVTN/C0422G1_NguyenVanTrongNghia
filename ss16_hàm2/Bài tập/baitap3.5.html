@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--Tạo một mảng với bảy phần tử dạng chuỗi có giá trị là tên các ngôi sao sau-->
+<!--: Polaris, Aldebaran, Deneb, Vega, Altair, Dubhe và Regulus. -->
+<!--Tạo một mảng khác với bảy phần tử dạng chuỗi có giá trị là tên các chòm sao tương ứng chứa-->
+<!--các ngôi sao: Ursa Minor, Tarurus, Cygnus, Lyra, Aquila, Ursa Major và Leo. -->
+<!--Tiếp theo, tạo một hàm nhận vào một tham số dạng chuỗi duy nhất.-->
+<!--Trong hàm này, duyệt qua mảng thứ nhất để tìm tên ngôi sao. -->
+<!--Nếu tìm thấy, trả lại giá trị tương ứng với chỉ số đó ở mảng thứ hai. -->
+<!--Nói cách khác, trả lại tên chòm sao của ngôi sao đó. -->
+<!--Trong phần <body> của trang web, dùng hộp thoại prompt để người dùng nhập vào tên của ngôi sao, -->
+<!--sau đó gọi hàm với thông tin đầu vào.-->
+<!--Đừng quên xử lý trong trường hợp không tìm thấy ngôi sao nào. Cho kết quả hiển thị trên màn hình.-->
+<input type="text" id="xStar">
+<button type="button" onclick="searchStar()">Search</button>
+<p id="result"></p>
+<script>
+    let nameStar = ["Polaris", "Aldebaran", "Deneb", "Vega", "Altair", "Dubhe", "Regulus"]
+    let star = ['Ursa Minor', 'Tarurus', 'Cygnus', 'Lyra', 'Aquila', 'Ursa Major', 'Leo']
+
+    // cách 1 nè
+    function searchStar() {
+        let inputStar = document.getElementById('xStar').value
+        let flg = false;
+        for (let i = 0; i < nameStar.length; i++) {
+            if (inputStar == nameStar[i]){
+                flg = true;
+                document.getElementById("result").innerText = (star[i])
+                break;
+            }
+        }
+        if (!flg){
+            document.getElementById("result").innerText = ("Không xác định")
+        }
+    } searchStar(inputStar)
+
+
+    // cách 2 nè
+    // function searchStar(inputStar) {
+    //     for (let i = 0; i < nameStar.length; i++) {
+    //         if (inputStar == nameStar[i]){
+    //             return star[i];
+    //         }
+    //     }
+    //     return "Không xác định";
+    //
+    // }
+    // document.write(searchStar(inputStar));
+</script>
+</body>
+</html>
