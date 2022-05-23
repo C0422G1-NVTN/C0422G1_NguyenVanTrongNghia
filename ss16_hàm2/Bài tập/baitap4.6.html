@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let randomNumber = parseFloat(prompt("Nhập số nguyên bất kì"))
+    function testNumber(randomNumber) {
+        if (Number.isInteger(randomNumber) && randomNumber > 0){
+            document.write("Nguyên dương")
+            return true
+            }
+        else {
+            document.write("không nguyên dương")
+            return false
+    }
+    }
+    testNumber(randomNumber)
+</script>
+</body>
+</html>

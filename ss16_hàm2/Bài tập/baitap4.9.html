@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let str = prompt("Nhập 1 chuỗi")
+    let character = prompt("Nhập một kí tự")
+    let arr = str.split("")//hàm chuyển chuỗi thành mảng(abc)->(a,b,c)
+    document.write(arr + "<br>")
+    let count = 0;
+    function characterCheck(arr,character) {
+        for (let i = 0; i < arr.length ; i++) {
+            if (character === arr[i]){
+                count++
+            }
+        }if (count==0){
+            count = -1
+        }
+        document.write("kí tự "+ character + " xuất hiện " + count + "lần")
+    }
+    characterCheck(arr,character)
+</script>
+</body>
+</html>

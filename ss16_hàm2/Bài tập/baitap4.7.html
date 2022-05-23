@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let number1 = parseInt(prompt("Nhập số nguyên thứ nhất"))
+    let number2 = parseInt(prompt("Nhập số nguyên thứ hai"))
+    function swapNumber(number1,number2) {
+        number1 = number1 + number2;
+        number2 = number1 - number2;
+        number1 = number1 - number2;
+        document.write(number1)
+        document.write(number2)
+    }
+    document.write(number1);
+    document.write(number2 + "<br>");
+    swapNumber(number1,number2)
+</script>
+</body>
+</html>

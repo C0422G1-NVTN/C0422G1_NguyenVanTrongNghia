@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let x = [];
+    let arr;
+    let number = prompt("nhap so luong phan tu")
+    for (i = 0;i<number;i++)
+    {
+        arr = parseInt(prompt("Nhap so phan tu "))
+        x.push(arr)
+    }
+    document.write(x + "<br>")
+    function swapX(x) {
+        let first = 0;
+        let last = x.length - 1;
+        while (first < last) {
+            let b = x[first];
+            x[first] = x[last];
+            x[last] = b;
+            first++;
+            last--;
+        }
+        document.write(x);
+    }
+    swapX(x)
+</script>
+</body>
+</html>
