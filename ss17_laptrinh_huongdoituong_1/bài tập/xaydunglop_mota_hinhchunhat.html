@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    class Rectangle {
+        constructor(length,width){
+            this.length = length;
+            this.width = width;
+        }
+        area()
+        {
+            return this.length * this.width
+        }
+        perimeter(){
+            return (this.length + this.width)*2
+        }
+        getLength(){
+            return this.length
+        }
+        getWidth(){
+            return this.width
+        }
+        setLength(newLength){
+            this.length = newLength
+        }
+        setWidth(newWidth){
+            this.width = newWidth
+        }
+    }
+    let rectangle = new Rectangle(3 ,4);
+    let length = rectangle.getLength()
+    let width = rectangle.getWidth()
+    console.log(length,width)
+    rectangle.setLength(10)
+    rectangle.setWidth(9)
+    length = rectangle.getLength()
+    width = rectangle.getWidth()
+    let area = rectangle.area()
+    let perimeter = rectangle.perimeter()
+    document.write("Chu vi hình chữ nhật là " + area + "<br>")
+    document.write("Diện tích hình chữ nhật là " + perimeter )
+</script>
+</body>
+</html>

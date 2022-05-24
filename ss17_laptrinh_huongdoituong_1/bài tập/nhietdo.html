@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    class Temperature{
+        constructor(doC) {
+            this.doC = doC;
+        }
+        getDoc(){
+            return this.doC;
+        }
+        setDoc(newDoc){
+            this.doC = newDoc;
+        }
+        toF(){
+            return ( 9/5 )* this.doC + 32;
+        }
+        toKelvin(){
+            return this.doC + 273.15;
+        }
+    }
+    let nhietDo = parseFloat(prompt("Nhập độ C "))
+    let temperature = new Temperature(nhietDo);
+    temperature.setDoc(25)
+    document.write("Nhiệt độ theo đề ban đầu là" + temperature.getDoc() + "<br>")
+    document.write("Nhiệt độ sau khi chuyển đổi là " + nhietDo + "<br>")
+    document.write("Nhiệt độ F là " + temperature.toF() + "<br>")
+    document.write("Nhiệt độ K là " + temperature.toKelvin())
+</script>
+</body>
+</html>
