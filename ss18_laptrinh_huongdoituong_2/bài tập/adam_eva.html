@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    class Apple{
+        constructor(weight){
+            this.weight = weight
+        }
+        getWeight(){
+            return this.weight;
+        }
+        decreaseApple(){
+            this.weight--
+        }
+        isEmpty(){
+            if (this.weight==0){
+                return true;
+            }else {
+                return false;
+            }
+        }
+    }
+    class Human{
+        constructor(name, gender, weight) {
+            this.name = name;
+            this.gender = gender;
+            this.weight = weight;
+        }
+        isMale(){
+            return this.gender;
+        }
+        setGender(newGender){
+            this.gender = newGender
+        }
+        checkApple(apple){
+            return apple.isEmpty()
+        }
+        say(string){
+            document.write(string)
+        }
+        eat(apple){
+          if(apple.getWeight()>0){
+              apple.decreaseApple()
+              this.weight++
+          }else {
+              alert("Hết táo")
+          }
+        }
+        getName(){
+            return this.name;
+        }
+        setName(newName){
+            this.name = newName
+        }
+        getWeight(){
+            return this.weight;
+        }
+        setWeight(newWeight){
+            this.weight = newWeight
+        }
+    }
+    //gọi nhiều quá anh ơi nên em chưa gọi để làm mấy bài kia nha
+</script>
+</body>
+</html>
